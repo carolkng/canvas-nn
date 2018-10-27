@@ -1,2 +1,5 @@
+# Please don't leak tokens!
 secrets.yaml
 
+# Python
+__pycache__/
