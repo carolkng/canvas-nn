@@ -1,3 +1,2 @@
 host: "canvas.ubc.ca"
-auth: "Bearer"
-
+prefix: "https://"

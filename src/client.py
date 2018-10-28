@@ -1,6 +1,6 @@
 import requests
 
-from config import config, secrets
+from src.config import config, secrets
 
 class CanvasAPI():
     host = config["host"]
