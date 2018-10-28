@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Blind Messenger</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  </head>
+  <body>
+    <div style="width:200px; height: 200px; font-familty: Helvetica, Arial, sans-serif;">
+      <form id="blind" action="" method="">
+        <label>
+          <input type="checkbox" id="blind-option" name="blind-option" /> <span style="position:relative; top:0px;">Turn on your blinders?</span>
+        </label>
+        
+        <textarea id="blinded" rows="3" cols="25"></textarea>
+        <button type="button" name="train" id="train">Save</button>
+      </form>
+    </div>
+    
+    <script src="scripts/popup_settings.js"></script>
+  </body>
+</html>
+
