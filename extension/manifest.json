@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Blind Messenger",
-  "description": "Have a Facebook friend you're always tempted to talk to? Hide your conversation completely with this extension!",
+  "name": "Canvas nn",
+  "description": "Run a NN to see what grade you'll get for this discussion",
   "version": "1.0",
 
   "icons": {
@@ -12,7 +12,7 @@
   },
 
   "browser_action": {
-    "default_title": "Blind Messenger Settings",
+    "default_title": "Canvas NN Settings",
     "default_icon": "icons/icon_128.png",
     "default_popup": "popup.html"
   },
@@ -20,8 +20,8 @@
   "permissions": [
     "tabs",
     "storage",
-    "https://www.messenger.com/",
-    "http://www.messenger.com/"
+    "https://canvas.ubc.ca",
+    "http://canvas.ubc.ca/"
   ],
 
   "background": {
@@ -30,7 +30,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://*.messenger.com/t/*", "https://*.messenger.com/t/*"],
+      "matches": ["http://canvas.ubc.ca/*", "https://canvas.ubc.ca/*"],
       "js": ["scripts/blinder.js"],
       "run_at": "document_end"
     }
