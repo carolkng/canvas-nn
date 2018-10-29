@@ -1,5 +1,4 @@
-# python-canvas-api
+# Canvas + NN = <3
 
 ## Requirements:
-- botium
-- 
+- synaptic.js
